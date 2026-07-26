@@ -1,4 +1,4 @@
-# Lab: 
+# Lab: Build an RPG character
 # In this lab you will practice the basics of Python by building a small app that creates a character for an RPG adventure.
 
 full_dot = '●'
