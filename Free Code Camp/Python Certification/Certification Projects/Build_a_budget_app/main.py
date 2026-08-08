@@ -1,6 +1,3 @@
-# Project: Build a Budget App
-# In this lab, you will build a simple budget app that tracks spending in different categories and can show the relative spending percentage on a graph.
-
 class Category:
     def __init__(self, name):
         self.name = name
@@ -128,21 +125,3 @@ def create_spend_chart(categories):
             spend_chart += line
 
     return spend_chart
-
-
-food = Category("Food")
-food.deposit(1000, "initial deposit")
-food.withdraw(10.15, "groceries")
-food.withdraw(15.89, "restaurant and more food for dessert")
-
-clothing = Category("Clothing")
-food.transfer(50, clothing)
-clothing.withdraw(25.55)
-clothing.withdraw(100)
-
-
-auto = Category("Auto")
-auto.deposit(1000, "initial deposit")
-auto.withdraw(15)
-
-print(create_spend_chart([food, clothing, auto]))

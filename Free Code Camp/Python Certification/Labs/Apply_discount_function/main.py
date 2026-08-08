@@ -1,6 +1,3 @@
-# Lab: Apply Discount Function
-# In this lab you will write a function that calculates the final price of an item after applying a percentage discount.
-
 def apply_discount(price, discount):
     if not isinstance(price, (int, float)):
         return "The price should be a number"

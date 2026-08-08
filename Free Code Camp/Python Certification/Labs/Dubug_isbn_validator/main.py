@@ -1,6 +1,3 @@
-# Lab: Debug an ISBN Validator
-# Camperbot has tried to build their own ISBN validator. However, they have made a few mistakes along the way. In this lab, you will fix the existing code and make it function properly.
-
 def validate_isbn(isbn, length):
 
     # TypeError - tratado

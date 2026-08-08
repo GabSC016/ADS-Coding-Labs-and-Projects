@@ -1,12 +1,5 @@
-# Lab: Build a Player Interface
-# Implemented an abstract Player interface using ABC, with movement tracking, random move selection, and path history. Created a concrete Pawn class that defines cardinal movements and extends its capabilities through a level_up method by adding diagonal moves.
-
-# Imports (abc e random)
-
 from abc import ABC, abstractmethod
 import random
-
-# Define a classe abastrata
 
 class Player(ABC):
     def __init__(self):
@@ -14,7 +7,6 @@ class Player(ABC):
         self.position = (0,0)
         self.path = [self.position]
 
-    # Método para sortear movimentos    
 
     def make_move(self):
         new_move = random.choice(self.moves)
@@ -24,8 +16,6 @@ class Player(ABC):
         self.position = updated_position
         self.path.append(updated_position)
         return self.position
-    
-    # Método abstrato
 
     @abstractmethod
     def level_up(self):

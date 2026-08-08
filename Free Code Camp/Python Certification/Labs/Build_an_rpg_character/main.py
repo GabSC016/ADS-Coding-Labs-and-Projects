@@ -1,6 +1,3 @@
-# Lab: Build an RPG character
-# In this lab you will practice the basics of Python by building a small app that creates a character for an RPG adventure.
-
 full_dot = '●'
 empty_dot = '○'
 
@@ -36,6 +33,3 @@ def create_character(name, strength, intelligence, charisma):
             return f"{bar_full_dot[:int_dot] + bar_empty_dot[int_dot:]}"
         
         return f"{name}\nSTR {dots_bar(strength)}\nINT {dots_bar(intelligence)}\nCHA {dots_bar(charisma)}"
-
-print(create_character('ren', 4, 2, 1))
-

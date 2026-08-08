@@ -1,6 +1,3 @@
-# Lab: Build a Game Character Stats Tracker
-# In this lab, you'll build a game character stats tracker. The program will allow you to create a character with specific attributes, update those attributes, and retrieve the current stats of the character.
-
 class GameCharacter:
     def __init__ (self, name):
         self._name = name
